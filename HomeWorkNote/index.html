@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>HomeWorkNote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav_style.css">
+    <link rel="stylesheet" href="note_setting.css">
+    <link rel="stylesheet" href="note_item.css">
+</head>
+<body>
+    <!-- setting note -->
+     <div id="setting_box" class="hidden">
+        <div class="setting-header">
+            <h2>Setting Note</h2>
+            <button id="close-setting">X</button>
+        </div>
+        <form>
+            <fieldset class="field">
+                <legend>Setting</legend>
+                <div>
+                    <label for="subject-name">Subject Name</label>
+                    <select id="subject-list-select">
+                        <option value="none">Select Subject</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="note-name">DeadLine</label>
+                    <input type="date" id="line-date" name="line-date" required>
+                </div>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Note</legend>
+                <textarea name="note" id="note-text"></textarea>
+            </fieldset>
+        </form>
+        <div class="btn-bar">
+            <button id="save-note">Save</button>
+        </div>
+     </div>
+
+    <!-- main display -->
+    <header>
+        <h1>HW-NOTE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Note</a></li>
+                <li><a href="config.html">Config</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="action-bar">
+            <button onclick="addnote()">ADD Note</button>
+        </div>
+        <div id="notes-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
