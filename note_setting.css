@@ -72,7 +72,7 @@
 }
 
 #subject-list-select {
-    width: 120px;
+    width: 100px;
     height: fit-content;
     padding: 2px;
     font-size: 10px;
@@ -81,7 +81,7 @@
 }
 
 #line-date {
-    width: 120px;
+    width: 100px;
     height: fit-content;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
